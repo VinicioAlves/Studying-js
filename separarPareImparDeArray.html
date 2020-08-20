@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Separar par e ímpar de um array</title>
+	<script type="text/javascript">
+		
+		var numeros = [1, 2, 3, 5, 6, 7, 10, 12, 13, 14, 16, 19, 20, 30]
+		var pares = Array()
+		var impares = Array()
+
+		for(var i = 0; i < numeros.length; i++){
+			if (numeros[i] % 2 === 0) {
+				pares.push(numeros[i])
+			}else{
+				impares.push(numeros[i])
+			}
+		}
+
+		document.write(`Pares: ${pares} <br>`)
+		document.write(`Ímpares: ${impares}`)
+		console.log(numeros.length)
+
+/*
+		for(var i = 0; i < numeros.length; i++){
+			if (numeros[i] % 2 === 0) {
+				document.write(numeros[i] + " é par <br>")
+			}else{
+				document.write(numeros[i] + " é ímpar <br>")
+			}
+		}
+*/
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
