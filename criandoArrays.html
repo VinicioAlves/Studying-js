@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Criando Arrays</title>
+	<script type="text/javascript">
+		
+		let musicas = Array()
+
+		musicas[0] = "Wolf totem"
+		musicas[1] = "Wrong side of heaven"
+		musicas[2] = "Fade to black"
+		musicas[3] = "Coming down"
+		musicas[4] = "Thunder"
+		musicas[5] = "Ride"
+
+		for(var i = 0; i < musicas.length; i++){
+			document.write(`Música ${i + 1}: ${musicas[i]}<br>`)
+		}
+
+
+
+		document.write("<hr>")
+		
+
+		let bandas = ["Metallica", "5FDP", "AC/DC", "Diabulus in Musica", "CPM22", "Charlie Brown Jr.", "Rammstein"]
+
+/*
+		for(var i = 0; i < bandas.length; i++){
+			document.write(`Banda ${i}: ${bandas[i]}<br>`)
+		}
+*/
+
+		document.write("<hr>")
+
+
+		bandas.forEach(function(valor, indice, array){
+			document.write(`Banda ${indice + 1}: ${valor} <br>`)
+		})
+
+
+		//document.write(musicas)
+		//console.log(musicas.sort())
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

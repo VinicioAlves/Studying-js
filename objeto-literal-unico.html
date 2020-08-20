@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Objeto literal - melhorias notação</title>
+	<script type="text/javascript">
+		
+		let assinatura = {
+			idCliente: 1000,
+			descricao: "Acesso a internet",
+			status(){
+				console.log("Ativo")
+			}
+		}
+
+		console.log(assinatura.descricao)
+
+		let y = assinatura
+		y.status()
+
+		y.descricao = "Internet + tv + telefone"
+
+		console.log(assinatura.descricao)
+		console.log(y.descricao)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

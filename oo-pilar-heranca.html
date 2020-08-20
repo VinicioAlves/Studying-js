@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	<meta charset="utf-8">
+	<title>Orientação a Objeto - Pilar da Herança</title>
+	<script type="text/javascript">
+		
+		class Animal{
+			constructor(cor, peso, tamanho){
+				this.cor = cor
+				this.peso = peso
+				this.tamanho = tamanho
+			}
+
+			dormir(){
+				return true
+			}
+		}
+
+		class BeijaFlor extends Animal{
+			constructor(cor, peso, tamanho, sabeVoar){
+				super(cor, peso, tamanho, sabeVoar)
+				this.sabeVoar = sabeVoar
+			}
+
+			domesticar(){
+				return false
+			}
+		}
+
+		class Cachorro extends Animal{
+			constructor(cor, peso, tamanho, late){
+				super(cor, peso, tamanho, late)
+				this.late = late
+			}
+
+			enterraOsso(){
+				return true
+			}
+		}
+
+		class Bulldog extends Cachorro{
+			constructor(cor, peso, tamanho, late, morde){
+				super(cor, peso, tamanho, late, morde)
+				this.morde = morde
+			}
+
+			bravo(){
+				document.write("É bravo demais!")
+			}
+
+		}
+
+
+
+		let animal1 = new Animal("Azul", 40, 160)
+		console.log(animal1)
+
+		let beijaFlor = new BeijaFlor("Rosa", .2, 10, true)
+		console.log(beijaFlor)
+
+		let cachorro1 = new Cachorro("Marrom", 5, 90, true)
+		console.log(cachorro1)
+		console.log(cachorro1.enterraOsso())
+
+		let bulldog1 = new Bulldog("Preto", 15, 140, true, true)
+		console.log(bulldog1)
+
+		bulldog1.bravo()
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

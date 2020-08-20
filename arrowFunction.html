@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arrow Functions</title>
+	<script type="text/javascript">
+		
+		let soma = 0
+
+		let calcular = (a, b) => {
+			soma = a + b
+			return console.log(`A soma de ${a} + ${b} é: ${soma}`)
+		}
+
+		calcular(5, 5)
+
+		//*******************************
+
+		let quadrado = x => x * x
+
+		console.log(quadrado(9))
+
+		//*******************************
+
+		let divisao = (a, b) => a / b
+
+		console.log(divisao(20, 5))
+
+		//******************************
+
+		let subtracao = (a, b) => a - b
+
+		console.log(subtracao(99, 33))
+
+		//******************************
+
+		let operacao = prompt("Qual a operação¿")
+
+		let calculadora = (b, c) => {
+			if (operacao === "+") {
+				console.log(b + c)
+			}
+			else if (operacao === "-") {
+				console.log(b - c)
+			}
+			else if (operacao === "*") {
+				console.log(b * c)
+			}
+			else if (operacao === "/" ) {
+				console.log(b / c)
+			}
+			else{
+				console.log("Digite um comando válido")
+			}
+		}
+
+		calculadora(30, 10)
+
+		//******************************************
+
+		let strings = (nome, idade, curso) => {
+			document.write(`Olá ${nome}, tudo bem com você? <br> Vejo que você tem ${idade} anos e cursa ${curso}. <br> Que legal! Espero que esteja gostando.`)
+		}
+
+		strings("Vinicio", 30, "ADS")
+
+		//**************************************
+
+		let arrotar = x => {x === "s" ? console.log("Arrotei") : console.log("Não arrotei")}
+		arrotar("n")
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
