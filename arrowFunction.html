@@ -7,12 +7,12 @@
 		
 		let soma = 0
 
-		let calcular = (a, b) => {
+		let somar = (a, b) => {
 			soma = a + b
 			return console.log(`A soma de ${a} + ${b} é: ${soma}`)
 		}
 
-		calcular(5, 5)
+		somar(5, 5)
 
 		//*******************************
 
@@ -66,10 +66,16 @@
 
 		//**************************************
 
-		let arrotar = x => {x === "s" ? console.log("Arrotei") : console.log("Não arrotei")}
-		arrotar("n")
+		let alegrar = x => {x === "s" ? console.log("Me alegrei!") : console.log("Não me alegrei")}
+		alegrar("n")
 
+		//*********************
+		document.write("<br><hr><br>")
 
+		let bobeira = () => document.write("Eai, feio.")
+		bobeira()
+
+		/**** teste ***/
 
 	</script>
 </head>
